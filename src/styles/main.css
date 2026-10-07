@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  /* 在这里定义设计令牌，例如 --color-accent: #0071e3; */
+}

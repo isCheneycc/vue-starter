@@ -1,0 +1,45 @@
+{
+  "name": "vue-starter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vue-tsc --build && vp build",
+    "preview": "vp preview",
+    "type-check": "vue-tsc --build",
+    "check": "vp check && vue-tsc --build",
+    "fix": "vp check --fix",
+    "test": "vp test"
+  },
+  "dependencies": {
+    "@vueuse/core": "^15.0.0",
+    "axios": "^1.20.0",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tsconfig/node24": "^24.0.5",
+    "@types/node": "^24.19.1",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "@vue/tsconfig": "^0.9.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.0",
+    "vite": "catalog:",
+    "vite-plugin-vue-devtools": "^8.2.1",
+    "vite-plus": "catalog:",
+    "vue-tsc": "^3.3.12"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  }
+}
