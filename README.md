@@ -5,7 +5,7 @@ Vue 3 工程模板：只有工程化配置、一个欢迎页和 axios 请求封�
 ## 生成项目
 
 ```sh
-vp create github:<你的用户名>/vue-starter -- my-app
+vp create github:isCheneycc/vue-starter -- my-app
 cd my-app
 node scripts/init.mjs
 ```
@@ -13,9 +13,9 @@ node scripts/init.mjs
 - `vp create` 会拷贝模板、执行 `git init`（不提交）、安装依赖并格式化；交互模式下还会询问是否加 git 钩子、编辑器配置和 AGENTS 文件。它不会改项目名。
 - `vp create` 会把 `pnpm-workspace.yaml` 里的 `vite-plus` 版本改成你本机 `vp` 的版本，其余依赖仍按 `pnpm-lock.yaml` 安装。想连 `vite-plus` 也保持模板里的版本，用下面的 `degit` 或 `git clone` 方式。
 - `node scripts/init.mjs [项目名]` 把项目名写入 `package.json`、`index.html` 的标题和 `README.md`，然后删除 `scripts/` 目录。不传项目名时使用项目目录名。不支持 `@scope/name` 形式。
-- 模板仓库需要是公开的；私有仓库请改用 `pnpm dlx degit --mode=git <你的用户名>/vue-starter my-app`，再进入目录执行 `vp install` 和 `node scripts/init.mjs`。
+- 模板仓库需要是公开的；私有仓库请改用 `pnpm dlx degit --mode=git isCheneycc/vue-starter my-app`，再进入目录执行 `vp install` 和 `node scripts/init.mjs`。
 
-模板还没推送到 GitHub 时，从本地目录生成：
+也可以从本地模板目录生成：
 
 ```sh
 git clone <模板目录的路径> my-app
